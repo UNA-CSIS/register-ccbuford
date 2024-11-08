@@ -34,7 +34,7 @@ if ($sql->num_rows > 0) {
     exit();
 } else {
     $sql = "INSERT INTO users (username, password) VALUES ('$endUser','$hashedPassword')";
-    $result = $conn->query($sql);
+   
 }
 
 if ($conn->query($sql) === TRUE) {
